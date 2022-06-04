@@ -35,6 +35,21 @@ a{
  }
 
  /* clearFix */
+ /* global */
+
+ .section-subtitle{
+    font-size:2rem ;
+    font-family: var(--macondoText);
+    letter-spacing: var(--letterSpacing);
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+
+}
+.section-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+ /* end ofglobal */
 .header{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
      url('./images/main-bcg.jpg') center/cover no-repeat fixed  ;
@@ -61,21 +76,7 @@ color: var(--mainWhite);
  /* animation */
 animation: slideFromLeft  5s ease-in-out 1;
  }
-/* .banner-btn{
-    background: var(--secondaryColor);
-    padding: 0.9rem 3.3rem;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: var(--mainGrey);
 
-
-}
-.banner-btn:hover{
-    opacity: 0.7;
-    outline: 0.2rem solid var(--secondaryColor);
-    outline-offset: 0.4rem;
-    transition: var(--mainTransition);
-} */
 .main-btn,.banner-btn{
     display: inline-block;
     background: var(--secondaryColor);
@@ -231,18 +232,7 @@ transition: var(--mainTransition);
     transform: scale(1.2);
    
 }
-.section-subtitle{
-    font-size:2rem ;
-    font-family: var(--macondoText);
-    letter-spacing: var(--letterSpacing);
-    text-transform: uppercase;
-    color: var(--secondaryColor);
 
-}
-.section-title{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
 about-text{
     margin: 1rem 0;
     max-width: 26rem;
@@ -255,5 +245,74 @@ about-text{
  }
 }
 /* about */
+/* products */
+.products{
+    background: var(--mainDark);
+
+}
+.products-info ,.products-inventory{
+    padding: 2rem 0;
+}
+.products-text{
+    color: var(--mainWhite);
+    max-width: 20rem;
+    margin: 1rem 0;
+}
+.product{
+    padding: 2rem 0;
+}
+.product-img{
+    width: 100%;
+    display: block;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+}
+.product-title{
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1rem;
+}
+.product-price{
+    color: var(--secondaryColor);
+    letter-spacing: var(--letterSpacing);
+    font-family: var(--macondoText);
+
+}
+/* end of producs */
+@media screen and (min-width:768px)
+{
+.product{
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+
+}
+.products-info{
+    padding: 2rem 1rem;
+}
+}
+@media screen and (min-width:992px){
+.product{
+    width: 33.3%;
+}
+}
+@media screen and (min-width:1200px){
+    .products-info{
+        float: left;
+        width: 30%;
+
+    }
+    .products-inventory{
+        float: left;
+        width: 70%;
+    }
+    .product{
+        padding: 1.5rem 1rem 0 1rem;
+
+    }
+}
+
+
 
 
