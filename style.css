@@ -23,7 +23,9 @@ body{
 a{
     text-decoration: none;
 }
-
+.white-text{
+color: var(--mainWhite);
+}
  /* end helper classes */
  /* clearFix */
  .clearFix::before ,
@@ -248,11 +250,10 @@ about-text{
 /* products */
 .products{
     background: var(--mainDark);
-
-}
-.products-info ,.products-inventory{
+    }
+.products-info.products-inventory{
     padding: 2rem 0;
-}
+   }
 .products-text{
     color: var(--mainWhite);
     max-width: 20rem;
@@ -266,18 +267,18 @@ about-text{
     display: block;
     border-radius: 0.4rem;
     margin-bottom: 2rem;
-}
+    }
 .product-title{
     color: var(--mainWhite);
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing);
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 .product-price{
     color: var(--secondaryColor);
     letter-spacing: var(--letterSpacing);
+  
     font-family: var(--macondoText);
-
 }
 /* end of producs */
 @media screen and (min-width:768px)
